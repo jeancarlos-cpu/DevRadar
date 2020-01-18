@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "env-cmd -f ./config/.env.dev nodemon src/index.js"
   },
   "author": "Jean Carlos",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "env-cmd": "^10.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7"
+  }
 }
